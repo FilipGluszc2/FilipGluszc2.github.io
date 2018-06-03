@@ -30,7 +30,7 @@
 .logo_bg{
 	margin-top:4px;
 	position:fixed;
-	left:-2%;
+	left:-32px;
 	width:490px;
 	height:100px;
 	font-size:3em;
@@ -230,3 +230,13 @@
 	
 }
 
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  #logo{
+	  font-size:1.7em;
+	  margin-top:8px;
+  }
+  .logo_bg{
+	  width:300px;
+	  height:70px;
+  }
+}

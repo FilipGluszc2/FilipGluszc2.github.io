@@ -44,10 +44,13 @@ th{
 	height:50%;
 	margin-left:38%;
 	margin-top:2%;
+	top:40%;
 }
 
 #galery_grid{
 	display:grid;
+	position:relative;
+	top:0%;
 	grid-template:repeat(4, 1fr)/repeat(6, 1fr);
 	grid-gap:1%;
 	width:70%;	
@@ -55,7 +58,7 @@ th{
 	margin-left:20%;
 	margin-right:10%;
 	margin-top:8%;
-	margin-bottom:1%;
+	margin-bottom:2%;
 }
 
 .galery_img_bigPicture{
@@ -153,8 +156,8 @@ th{
 
 .cd{
 	position:relative;
-	width:10%;
-	margin-top:1%;
+	width:50px;
+	margin-top:3px;
 }
 
 .logo_words{
@@ -320,4 +323,65 @@ th{
 .text_galery{
 	width:70px;
 	position:fixed;
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait)  {
+  .cd {
+    width:30px;
+	margin-top:13px;
+  }
+  .avatar{
+	  display:none;
+  }
+  #galery_grid{
+	  margin-left:0%;
+	  width:100%;
+  }
+  .galery_img_bigPicture{
+	  margin-left:2%;
+	  margin-right:2%;
+  }
+  thead, tbody{
+	font-size:0.4em;
+  }
+  .table{
+	  margin-top:20%;
+  }
+  .SS{
+	right:-50px;
+	height:60px;
+	top:350px;
+	width:162px;
+  }
+  @keyframes ss_480 {
+	0%{transform:rotate(270deg);top:350px;right:-130px;}
+	70%{transform:rotate(360deg);}
+	100%{transform:rotate(360deg);top:230px;right:0px;}
+}
+  .screen:hover .SS{
+	animation-name: ss_480;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+	animation-delay:0.25s;
+	}
+  .img{
+	position:relative;
+	background-color:black;
+	width:300px;
+	height:162px;
+	border:4px double white;
+	right:-220px;
+	top:60px;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait)  {
+	.avatar{
+	  display:none;
+  }
+  #galery_grid{
+	  margin-left:0%;
+	  width:100%;
+  }
+  
 }
