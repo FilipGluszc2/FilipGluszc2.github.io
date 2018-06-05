@@ -1,12 +1,3 @@
-*{
-	margin:0;
-	padding:0;
-}
-
-body{
-	overflow-x:hidden;
-}
-
 @keyframes info {
 	0% {opacity:0; width:0%;left:-3%;top:87%;}
 	100% {opacity:1; width:100%;left:-3%;top:87%;}
@@ -16,6 +7,27 @@ body{
 	0%{right:-35%;opacity:0;}
 	10%{opacity:0;}
 	100%{opacity:1;right:0%;}
+}
+
+@keyframes galery_img_first{
+	0%{height:0%;width:2%;left:48%;}
+	50%{height:100%;width:2%;left:48%;}
+	100%{height:100%;width:100%;left:0%;}
+}
+
+@keyframes ss {
+	0%{transform:rotate(270deg);top:350px;right:-130px;}
+	70%{transform:rotate(360deg);}
+	100%{transform:rotate(360deg);top:120px;right:0px;}
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	overflow-x:hidden;
 }
 
 thead, tbody{
@@ -28,7 +40,7 @@ th{
 	padding-top:1%;
 	padding-bottom:1%;
 }
-
+/*DANE TECHNICZNE*/
 .table{
 	font-size:32px;
 	color:black;
@@ -38,15 +50,35 @@ th{
 	margin-bottom:3.5%;
 }
 
+.zakladka_table{
+	position:fixed;
+	top:320px;
+	z-index:5;
+	left:-15px;
+	text-align:center;
+	cursor:pointer;
+}
+/*/DANE TECHNICZNE*/
+/*VIDEO*/
 .video{
 	position:relative;
 	width:45%;
 	height:50%;
 	margin-left:38%;
 	margin-top:2%;
-	top:40%;
+	top:5%;
 }
 
+.zakladka_video{
+	position:fixed;
+	top:400px;
+	z-index:5;
+	left:-15px;
+	text-align:center;
+	cursor:pointer;
+}
+/*/VIDEO*/
+/*GALERY*/
 #galery_grid{
 	display:grid;
 	position:relative;
@@ -68,85 +100,6 @@ th{
 	margin-right:13%;
 }
 
-@keyframes galery_img_first{
-	0%{height:0%;width:2%;left:48%;}
-	50%{height:100%;width:2%;left:48%;}
-	100%{height:100%;width:100%;left:0%;}
-}
-
-.galery_img_first{
-	position:relative;
-	z-index:4;
-	cursor:default;
-	animation-name:galery_img_first;
-	animation-duration:0.75s;
-	animation-fill-mode:forwards;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image:url('../ZDJ/zdj1.jpg');
-}
-.galery_img_2{
-	position:relative;
-	z-index:4;
-	cursor:default;
-	animation-name:galery_img_first;
-	animation-duration:0.75s;
-	animation-fill-mode:forwards;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image:url('../ZDJ/zdj2.jpg');
-}
-.galery_img_3{
-	position:relative;
-	z-index:4;
-	cursor:default;
-	animation-name:galery_img_first;
-	animation-duration:0.75s;
-	animation-fill-mode:forwards;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image:url('../ZDJ/zdj3.jpg');
-}
-.galery_img_4{
-	position:relative;
-	z-index:4;
-	cursor:default;
-	animation-name:galery_img_first;
-	animation-duration:0.75s;
-	animation-fill-mode:forwards;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image:url('../ZDJ/zdj4.jpg');
-}
-.galery_img_5{
-	position:relative;
-	z-index:4;
-	cursor:default;
-	animation-name:galery_img_first;
-	animation-duration:0.75s;
-	animation-fill-mode:forwards;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image:url('../ZDJ/zdj5.jpg');
-}
-.galery_img_6{
-	position:relative;
-	z-index:4;
-	cursor:default;
-	animation-name:galery_img_first;
-	animation-duration:0.75s;
-	animation-fill-mode:forwards;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image:url('../ZDJ/zdj6.jpg');
-}
-
 .galery_img{
 	width:100%;
 	height:auto;
@@ -154,6 +107,29 @@ th{
 	cursor:pointer;
 }
 
+.avatar{
+	position:absolute;
+	top:115%;
+	width:18%;
+	z-index:3;
+}
+
+.zakladka_galery{
+	position:fixed;
+	transform:rotate(90deg);
+	top:240px;
+	z-index:5;
+	left:50px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.text_galery{
+	width:70px;
+	position:fixed;
+}
+/*/GALERY*/
+/*LOGO*/
 .cd{
 	position:relative;
 	width:50px;
@@ -165,50 +141,8 @@ th{
 	position:relative;
 	top:-10px;
 }
-
-.bg_up{
-	background-image:url('../ZDJ/poebg.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	position:relative;
-	width:100%;
-	height:100%;
-	z-index:0;
-}
-.bg_down{
-	background-image:url('../ZDJ/poebg2.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	position:absolute;
-	width:100%;
-	height:100%;
-	z-index:0;
-}
-.bg_down2{
-	background-image:url('../ZDJ/bg_down2.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	position:absolute;
-	top:200%;
-	width:100%;
-	height:100%;
-	z-index:0;
-}
-.bg_down3{
-	background-image:url('../ZDJ/bg_down3.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	position:absolute;
-	top:300%;
-	width:100%;
-	height:100%;
-	z-index:0;
-}
-
+/*/LOGO*/
+/*SCREENSHOT*/
 .note{
 	position:absolute;
 	right:5%;
@@ -260,12 +194,6 @@ th{
 	border-radius:50px 50px 0px 0px;
 }
 
-@keyframes ss {
-	0%{transform:rotate(270deg);top:350px;right:-130px;}
-	70%{transform:rotate(360deg);}
-	100%{transform:rotate(360deg);top:120px;right:0px;}
-}
-
 .screen:hover .SS{
 	animation-name: ss;
     animation-duration: 0.5s;
@@ -286,44 +214,7 @@ th{
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
-
-.avatar{
-	position:absolute;
-	top:115%;
-	width:18%;
-	z-index:3;
-}
-
-.zakladka_galery{
-	position:fixed;
-	transform:rotate(90deg);
-	top:240px;
-	z-index:5;
-	left:50px;
-	text-align:center;
-	cursor:pointer;
-}
-.zakladka_table{
-	position:fixed;
-	top:320px;
-	z-index:5;
-	left:-15px;
-	text-align:center;
-	cursor:pointer;
-}
-.zakladka_video{
-	position:fixed;
-	top:400px;
-	z-index:5;
-	left:-15px;
-	text-align:center;
-	cursor:pointer;
-}
-
-.text_galery{
-	width:70px;
-	position:fixed;
-}
+/*/SCREENSHOT*/
 
 @media only screen and (max-width: 480px) and (orientation: portrait)  {
   .cd {
