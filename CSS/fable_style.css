@@ -1,0 +1,138 @@
+.galery_img_first{
+	position:relative;
+	z-index:4;
+	cursor:default;
+	animation-name:galery_img_first;
+	animation-duration:0.75s;
+	animation-fill-mode:forwards;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image:url('../ZDJ_fable/zdj1.jpg');
+}
+.galery_img_2{
+	position:relative;
+	z-index:4;
+	cursor:default;
+	animation-name:galery_img_first;
+	animation-duration:0.75s;
+	animation-fill-mode:forwards;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image:url('../ZDJ_fable/zdj2.jpg');
+}
+.galery_img_3{
+	position:relative;
+	z-index:4;
+	cursor:default;
+	animation-name:galery_img_first;
+	animation-duration:0.75s;
+	animation-fill-mode:forwards;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image:url('../ZDJ_fable/zdj3.jpg');
+}
+.galery_img_4{
+	position:relative;
+	z-index:4;
+	cursor:default;
+	animation-name:galery_img_first;
+	animation-duration:0.75s;
+	animation-fill-mode:forwards;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image:url('../ZDJ_fable/zdj4.jpg');
+}
+.galery_img_5{
+	position:relative;
+	z-index:4;
+	cursor:default;
+	animation-name:galery_img_first;
+	animation-duration:0.75s;
+	animation-fill-mode:forwards;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image:url('../ZDJ_fable/zdj5.jpg');
+}
+.galery_img_6{
+	position:relative;
+	z-index:4;
+	cursor:default;
+	animation-name:galery_img_first;
+	animation-duration:0.75s;
+	animation-fill-mode:forwards;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image:url('../ZDJ_fable/zdj6.jpg');
+}
+/*BACKGROUND_MAIN*/
+.bg_up{
+	background-image:url('../ZDJ_fable/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position:relative;
+	width:100%;
+	height:100%;
+	z-index:0;
+}
+/*/BACKGROUND_MAIN*/
+/*BACKGROUND_GALERY*/
+.bg_down{
+	background-image:url('../ZDJ_fable/bg2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:0;
+}
+/*/BACKGROUND_GALERY*/
+/*BACKGROUND_LOGO*/
+.width{
+	width:490px;
+}
+/*/BACKGROUND_LOGO*/
+/*AVATAR*/
+.top_avatar{
+	height:70%;
+}
+/*/AVATAR*/
+/*VIDEO*/
+.left_video{
+	left:-30%;
+	top:40%;
+}
+/*/VIDEO*/
+/*BACKGROUND_TABLE*/
+.bg_down2{
+	background-image:url('../ZDJ_fable/bg_down2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position:absolute;
+	top:200%;
+	width:100%;
+	height:100%;
+	z-index:0;
+}
+/*/BACKGROUND_TABLE*/
+/*BACKGROUND_VIDEO*/
+.bg_down3{
+	background-image:url('../ZDJ_fable/bg_down3.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position:absolute;
+	top:300%;
+	width:100%;
+	height:100%;
+	z-index:0;
+}
+/*/BACKGROUND_VIDEO*/

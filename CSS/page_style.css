@@ -40,6 +40,16 @@ th{
 	padding-top:1%;
 	padding-bottom:1%;
 }
+/*STOPKA*/
+	.stopka{
+		background-color:black;
+		color:white;
+		text-align:center;
+		font-size:2em;
+		position:relative;
+		margin-top:22.4%;
+	}
+/*/STOPKA*/
 /*DANE TECHNICZNE*/
 .table{
 	font-size:32px;
